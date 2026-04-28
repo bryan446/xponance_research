@@ -1,0 +1,6 @@
+llama-parse>=0.5.0
+mcp>=1.0.0
+neo4j>=5.28.0
+neo4j-graphrag[openai,experimental]>=1.14.0
+python-dotenv>=1.0.1
+pypdf>=5.0.0
