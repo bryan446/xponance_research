@@ -1,0 +1,5 @@
+[mcp_servers.xponance_research]
+enabled = true
+command = 'C:\Users\bryan\OneDrive\Desktop\xponance_research\.venv\Scripts\python.exe'
+args = ["-m", "llamacloud_rag.mcp_server"]
+cwd = 'C:\Users\bryan\OneDrive\Desktop\xponance_research'

@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.llamacloud_index_state.json
+.neo4j_graph_state.json
+src/research_rag/__pycache__/
+llamacloud_rag/__pycache__/
+scripts/__pycache__/

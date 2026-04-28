@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xponance-neo4j-graphrag"
+version = "0.1.0"
+description = "Neo4j-centric GraphRAG utilities and MCP server for the xponance research corpus."
+readme = "docs/neo4j_graphrag_setup.md"
+requires-python = ">=3.12"
+dependencies = [
+  "llama-parse>=0.5.0",
+  "mcp>=1.0.0",
+  "neo4j>=5.28.0",
+  "neo4j-graphrag[openai,experimental]>=1.14.0",
+  "python-dotenv>=1.0.1",
+  "pypdf>=5.0.0",
+]
+
+[project.scripts]
+xponance-sync-graph = "llamacloud_rag.graph_bootstrap:main"
+xponance-research-mcp = "llamacloud_rag.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["llamacloud_rag*"]
